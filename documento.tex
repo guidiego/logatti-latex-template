@@ -1,0 +1,231 @@
+\documentclass[12pt,oneside,a4paper,chapter=TITLE, english, french,	spanish, brazil]{abntex2-logatti}
+
+
+\titulo{Caracterização das dimensões afetivas negativas em perfis de redes sociais por meio de Inteligência Artificial.}
+\curso{Sistemas de Informação}
+\autor{Guilherme Diego Albino Francisco}
+\RG{40.741.310-8}
+\local{Araraquara - SP}
+\data{\MONTH\space / \the\year}
+\orientador[Orientadora:]{Cristina Cibeli Vidotti Ivo de Medeiros}
+\preambulo{Trabalho de Conclusão de Curso, apresentado às Faculdades Integradas de Araraquara, como requisito parcial para obtenção do título de Bacharel em }
+
+\begin{document}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+ \pretextual
+
+
+\imprimircapa
+
+\folhaderosto
+
+
+
+\newcommand{\listofgraficosname}{Lista de Gráficos}
+\newcommand{\graficoname}{Gráfico}
+\newfloat[chapter]{grafico}{logr}{\graficoname}
+\newlistof{listofgraficos}{logr}{\listofgraficosname}
+\newlistentry{grafico}{logr}{0}
+
+\counterwithout{grafico}{chapter}
+\renewcommand{\cftgraficoname}{\graficoname\space}
+\renewcommand*{\cftgraficoaftersnum}{\hfill--\hfill}
+
+
+\pagebreak
+\begin{dedicatoria}
+ Este trabalho é dedicado às crianças adultas que,\\
+    quando pequenas, sonharam em se tornar cientistas.
+\end{dedicatoria}
+
+
+\begin{agradecimentos}
+Os agradecimentos principais são direcionados à Gerald Weber, Miguel Frasson,
+Leslie H. Watter, Bruno Parente Lima, Flávio de Vasconcellos Corrêa, Otavio Real
+Salvador, Renato Machnievscz e todos aqueles que
+contribuíram para que a produção de trabalhos acadêmicos conforme
+as normas ABNT com \LaTeX\ fosse possível.
+
+\end{agradecimentos}
+
+
+\begin{epigrafe}
+``Não vos amoldeis às estruturas deste mundo, \\
+		mas transformai-vos pela renovação da mente, \\
+		a fim de distinguir qual é a vontade de Deus: \\
+		o que é bom, o que Lhe é agradável, o que é perfeito.''\\
+		(Bíblia Sagrada, Romanos 12, 2)
+\end{epigrafe}
+
+
+
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo, espaço entre o resumo e as palavras-chave
+\begin{resumo}
+ Segundo a ABNT, o resumo deve ressaltar o
+ objetivo, o método, os resultados e as conclusões do documento. A ordem e a extensão
+ destes itens dependem do tipo de resumo (informativo ou indicativo) e do
+ tratamento que cada item recebe no documento original. O resumo deve ser
+ precedido da referência do documento, com exceção do resumo inserido no
+ próprio documento. (\ldots) As palavras-chave devem figurar logo abaixo do
+ resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
+ ponto e finalizadas também por ponto.
+
+ \textbf{Palavras-chave}: latex. abntex. editoração de texto.
+\end{resumo}
+
+
+% resumo em inglês
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+   This is the english abstract. 
+
+   \textbf{Key-words}: latex. abntex. text editoration.
+ \end{otherlanguage*}
+\end{resumo}
+
+
+
+% ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+
+
+% Lista de Gráficos
+% \pdfbookmark[0]{\listofgraficosname}{log}
+% \listofgraficos*
+% \cleardoublepage
+
+
+
+% ---
+% inserir lista de tabelas
+% ---
+% \pdfbookmark[0]{\listtablename}{lot}
+% \listoftables*
+% \cleardoublepage
+% ---
+
+% Lista de Quadros
+% \pdfbookmark[0]{\listofquadrosname}{loq}
+% \listofquadros*
+% \cleardoublepage
+
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+% \begin{siglas}
+%   \item[ABNT] Associação Brasileira de Normas Técnicas
+%   \item[abnTeX] ABsurdas Normas para TeX
+% \end{siglas}
+% ---
+
+% ---
+% inserir lista de símbolos
+% ---
+% \begin{simbolos}
+%   \item[$ \Gamma $] Letra grega Gama
+%   \item[$ \Lambda $] Lambda
+%   \item[$ \zeta $] Letra grega minúscula zeta
+%   \item[$ \in $] Pertence
+% \end{simbolos}
+% ---
+
+
+% inserir o sumario
+% ----
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+
+\chapter*[Introdução]{Introdução}
+
+\chapter{SÍNTESE BIBLIOGRÁFICA}
+
+\chapter{MATERIAIS E MÉTODOS}
+
+\chapter{RESULTADOS, ANÁLISE E DISCUSSÃO}
+
+\chapter*[Considerações Finais]{Considerações Finais}
+
+
+
+
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+
+\bibliography{bibliografia}
+
+
+% Inicia os apêndices
+\begin{apendicesenv}
+
+
+\partapendices % Imprime uma página indicando o início dos apêndices
+
+
+\chapter{Quisque libero justo}
+
+
+
+
+
+
+
+\end{apendicesenv}
+
+
+
+% ----------------------------------------------------------
+% Anexos
+% ----------------------------------------------------------
+
+% ---
+% Inicia os anexos 
+% ---
+\begin{anexosenv}
+
+
+\partanexos  % Imprime uma página indicando o início dos anexos
+
+% ----
+\chapter{Primeiro}
+
+Este anexo é sobre como se pode ficar rico. Para ficar rico...
+
+
+
+
+
+\end{anexosenv}
+
+
+ \end{document}
